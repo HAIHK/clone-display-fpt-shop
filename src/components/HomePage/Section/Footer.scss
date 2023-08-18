@@ -1,0 +1,116 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background: white;
+    .footer-box{
+        width: 1200px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .box-item{
+            .item1{
+                padding: 0;
+                list-style: none;
+                width: 204px;
+                height: 250px;
+                font-size: 14px;
+                margin-bottom: 0;
+                color: #0e68ee;
+
+                :hover{
+                    text-decoration: dashed;
+                    color: #707070;
+                }
+                .item-child{
+                    margin-top: 10px;
+                    margin-left: 10px;
+                   a{
+                    display: flex;
+                      .img-child1{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .img-child2{
+                        height: 40px;
+                    }
+                   }
+                  
+                }
+            }
+            .title{
+                margin-bottom: 0;
+                font-weight: bold;
+                color: #707070;
+            }
+            .img-icon{
+                margin-top: 30px;
+                .img1{
+                    width: 56px;
+                    height: 32px;
+                    margin-right: 5px;
+
+                }
+            }
+            .connect{
+                display: flex;
+                margin: 10px 0;
+                .connect-img{
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 10px;
+                }
+            }
+            .website{
+                .connect-web{
+                    // font-weight: 600px;
+                    color: #707070;
+                    margin-top: 10px;
+                }
+                .img-web1{
+                    width: 148px;
+                    height: 25px;
+                }
+                .img-web2{
+                    width: 120px;
+                    height: 24px;
+                }
+                .img-web3{
+                    width: 127px;
+                    height: 28px;
+                }
+            }
+        }
+        .item4{
+                list-style: none;
+                padding: 0;
+                width: 252px;
+                height: 316px;
+
+                 .item-child{
+                    margin-top: 10px;
+                    margin-left: 10px;
+
+                    .phone{
+                        text-decoration: none;
+                        color: rgb(219, 15, 15);
+                        font-weight: 600;
+                        font-size: 23px;
+                    }
+
+                    span{
+                    margin-left: 10px;
+                   }
+                 }
+                .box-payment{
+                    width: 250px;
+
+                    .img-payment{
+                        height: 29px;
+                        width: 46px;
+                        margin-right: 3px;
+                    }
+                }
+        }
+    }
+}

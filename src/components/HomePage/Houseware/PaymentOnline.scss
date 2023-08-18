@@ -1,0 +1,168 @@
+.payment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   .box{
+        width: 1200px;
+        background: white;
+        margin-top: 10px;
+        border-radius: 6px;
+        .title{
+                margin-top: 10px;
+                .title-text{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+            }
+     .payment-box{
+        
+        .mySwiper{
+            padding: 10px 17px 10px 15px;
+            .swiper-button-next:after,
+            .swiper-button-prev:after{
+                   border: 2px solid;
+                   color: #6c757d;
+                   background: white;
+                   font-size: 15px;
+                   font-weight: 600;
+                   height: 40px !important;
+                   width: 30px !important;
+                   border-radius: 50%;
+                   display: flex;
+                   justify-content: center;
+                   padding: 12px;
+            }
+            .box-child{
+                img{
+                    width: 375px;
+                    height: 176px;               
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+   }
+
+   .box-utilities{
+    width: 1200px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 6px;
+
+    .title{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            .title-name{
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .search-all{
+                color: #0088ff;
+            }
+    }
+
+    .utilities{
+        display: flex;
+        padding: 15px;
+        .item{
+            margin-right: 24px;
+            .item-child{
+            display: flex;
+            justify-content: center;
+            width: max-content;
+            width: 275px;
+            padding: 12px;
+            border-radius: 6px;
+            .title-text{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                .text-title{
+                    font-weight: bold;
+                    color: #707070;
+                }
+            }
+            }
+        }
+    }
+   }
+   .box-accessory{
+        width:1200px;
+        background: white;
+        margin-top: 20px;
+        border-radius: 6px;
+        .title{
+            margin-top: 10px;
+            .title-name{
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-left: 10px;
+            }
+        }
+      .box{
+        display: flex;
+        flex-wrap: wrap;
+        
+          .item{
+            border: 1px solid #d7dbdf;
+            height: 140px;
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px;
+            position: relative;
+          
+            .icon-item{
+                .icon{
+                    font-size: 45px;
+                    color: #6c757d;
+                }
+            }
+            .name-item{
+                color: #6c757d;
+                margin-top: 20px;
+                width: 130px;
+                height: 30px;
+                text-align: center;
+            }
+
+            ::after{
+                content: "";
+                width: 150px;
+                height: 140px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+              :hover::after{
+                border: 1px solid rgb(194, 194, 194);
+                box-shadow: 0px 0px 0px 3px rgba(156, 156, 156, 0.25);
+            }
+        }
+      }
+   }
+
+   .box-select{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .box-item{
+        img{
+            border-radius: 6px;
+        }
+    }
+   }
+}

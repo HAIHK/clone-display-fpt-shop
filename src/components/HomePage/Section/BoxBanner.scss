@@ -1,0 +1,93 @@
+.banner-container{
+    display: flex;
+    justify-content: center;
+    .banner-box{
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+        background: white;
+        border-radius: 3px;
+    .animation{
+        width: 800px;
+        padding-top: 2px;
+        .mySwiper{
+            .swiper-button-next:after,
+            .swiper-button-prev:after{
+                border: 2px solid;
+                color: #6c757d;
+                background: white;
+                font-size: 20px;
+                font-weight: 600;
+                height: 50px !important;
+                width: 43px !important;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                padding: 13px;
+            }
+        }
+
+        .select{
+            display: flex;
+            .select-child{
+                text-align: center;
+                padding: 5px;
+                font-size: 13px;
+                font-weight: 450;
+                cursor: pointer;
+                width: 160px;
+                height: 55px;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    height: 3px;
+                    width: 0;
+                    position: absolute;
+                    background: tomato;
+                    bottom: 0;
+                    left: 0;
+                    // z-index: -1;
+                }
+                &:hover::before{
+                    width: 100%;
+                }
+                &:hover{
+                    font-weight: bold;
+
+                }
+                
+            }
+        }
+    }
+
+    .img-phone{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .img-intro{
+            border-radius: 5px;
+        }
+        .promotion{
+            .title-sale{
+                font-weight: 600;
+                color: #6c757d;
+            }
+            .title{
+                    font-weight: 600;
+                }
+            .item-sale{
+                margin-bottom: 5px;
+
+               img.img-child{
+                    border: 1px solid #e3e3e4;
+                    border-radius: 5px;
+            }
+               
+            }
+        }
+    }
+    }
+}

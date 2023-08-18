@@ -1,0 +1,84 @@
+.container-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   .box-home{
+        display: flex;
+        justify-content: center;
+        .box{
+            width: 1200px;
+            background: white;
+            padding: 15px 0;
+            border-radius: 6px;
+            .title{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 15px;
+                margin: 0 0 15px;
+
+        .title-text{
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .search-all{
+            color: #177ad1;
+            position: relative;
+            font-weight: 400;
+            cursor: pointer;
+
+            &::after{
+                content: "";
+                height: 2px;
+                width: 0;
+                background: #3f3f3f;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 0.5s ease-in-out;
+            }
+              
+            &:hover::after{
+                width: 100%;
+            }
+
+            &:hover{
+                transition: all 0.5s ease-in-out;
+                color: #3f3f3f;
+            }
+        }
+    }
+            .box-child{
+                .mySwiper2{
+               .item{
+                display: flex;
+                     .item-home{
+                        height: 74px;
+                        width: 144px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid rgb(194, 194, 194);
+                        border-radius: 6px;
+                        margin-left: 16px;
+                        margin-bottom: 16px;
+                        .name{
+                            font-size: 14px;
+                        }
+                    }
+               }
+                .swiper-slide{
+                        display: flex;
+                        width: min-content;
+                    }
+            }
+               
+                   
+                    
+            }
+        }
+   }
+}

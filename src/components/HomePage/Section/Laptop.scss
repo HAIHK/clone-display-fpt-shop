@@ -1,0 +1,224 @@
+.laptop-container{
+    .laptop-box{
+    display: flex;
+    justify-content: center;
+    .box{
+        width: 1200px;
+        height: 1110px;
+        background: white;
+        margin: 20px 0;
+        border-radius: 5px;
+        padding: 15px 0;
+
+     .title{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin: 0 0 15px;
+
+        .title-text{
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .search-all{
+            color: #177ad1;
+            position: relative;
+            font-weight: 400;
+            cursor: pointer;
+
+            &::after{
+                content: "";
+                height: 2px;
+                width: 0;
+                background: #3f3f3f;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all 0.5s ease-in-out;
+            }
+              
+            &:hover::after{
+                width: 100%;
+            }
+
+            &:hover{
+                transition: all 0.5s ease-in-out;
+                color: #3f3f3f;
+            }
+        }
+    }
+
+    .laptop{
+        display: flex;
+        flex-wrap: wrap;
+       
+         .box-container{
+            width: 300px;
+            height: 510px;
+            position: relative;
+            padding: 12px;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                width: 300px;
+                top: 0;
+                left: 0;
+            }
+            
+             &:hover::after{
+                border: 1px solid #c9c9c9;
+                border-radius: 5px;
+                height: 585px;
+                width: 300px; 
+                background: white; 
+                z-index: 1;
+            }
+
+             &:hover .box-img{
+            transform: scale(1.03);
+            }
+
+            &:hover .buy-compare{
+                transition: all 0.2s ease-in-out;
+                opacity: 1;
+            }
+            &:hover .box-img{
+                z-index: 2;
+            }
+           
+
+             .box-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+
+                
+                .img-child{
+                    background-image: url(../../../assets/images/Promotion/frame.png);
+                    background-size: cover;
+                    width: 270px;
+                    height: 210px;
+                }
+                .img-laptop{
+                        position: absolute;
+                        max-height: 168px;
+                        left: 0;
+                        margin-left: 60px;
+                        margin-top: 31px;
+                }
+            }
+
+            .box-info{
+                margin: 15px 0;
+                position: absolute;
+                top: 218px;
+                z-index: 2;
+                .title-name{
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                &:hover{
+                    color: #0168fa;
+                }
+                }
+
+                .price{
+                    border: 1px solid;
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 15px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    background: #d30b06;
+                    border: none;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                
+            }
+            .endow-box{
+                width: 280px;
+                height: max-content;
+                margin: 10px auto;
+                background: #f8f7f7;
+                border-radius: 5px;
+                position: absolute;
+                margin-top: 105px;
+                z-index: 2;
+
+                .technology{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #6c757d;
+                    gap: 10px;
+                    padding: 10px; 
+                    display: flex;
+                    flex-wrap: wrap;
+                    span{
+                        margin-right: 5px;
+                    }
+                }
+                    .endow-child{
+                        border-radius: 50%;
+                        margin-left: 10px;
+                        
+                    }
+                    .endow-text{
+                        padding-top: 10px;
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: #6c757d;
+                    }
+                }
+                .buy-compare{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 280px;
+                    position: absolute;
+                    background: white;
+                    bottom: -70px;
+                    z-index: 2;
+                    opacity: 0;
+                    .buy{
+                        border: 1px solid;
+                        padding: 8px 30px;
+                        border-radius: 6px;
+                        background: #d30b06;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+
+                    .compare{
+                        border: 1px solid;
+                        padding: 8px 20px;
+                        border-radius: 6px;
+                        background: #6c757d;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        cursor: pointer;
+                        z-index: 2;
+                    }
+
+                   
+                }
+        }
+    }
+    }
+   
+}
+}
